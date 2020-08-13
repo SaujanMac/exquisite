@@ -1,0 +1,248 @@
+@import 'var';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body {
+    background: $white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header {
+    background: url('../images/showcase.png') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 10px;
+    nav {
+        font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+        color: $secondary;
+        .navbar-brand {
+            background: url('../images/logo.png') no-repeat center/cover;
+            width: 150px;
+            height: 45px;
+        }
+        
+        .nav-link {
+            color: $secondary;
+            font-weight: 600;
+        }
+        .nav-link.active {
+            color: $cedar;
+        }
+        
+    }
+    .showcase {
+        .display-4 {
+            font-family: 'Bebas Neue';
+            font-size: 5rem;
+            color: $primary;
+        }
+        .text-muted {
+            color: #999999;
+            line-height: 1.8rem;
+            font-size: 1rem;
+        }
+        a.btn {
+            background-color: $primary;
+            color: $white;
+            width: 125px;
+            font-weight: 600;
+            border-radius: 2rem;
+        }
+    }
+}
+// ONLINE ORDER
+.orderprocess {
+    width: 100vw;
+    height: 100vh;
+    .display-4{
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: $cedar;
+        text-align: center;
+    }
+    
+    
+}
+// MENU
+.menu {
+    background: url('../images/menubg.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    // height: 100vh;
+    width: 100vw;
+    color: $white;
+    .blackop {
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+    }
+    h2 {
+        color: $white;
+        font-family: 'Montserrat';
+        text-align: center;
+        font-weight: 600;
+    }
+    h5 {
+        color: $white;
+        font-size: 1.2rem;
+    }
+    h6 {
+        padding-top: 10px;
+        font-style: italic;
+    }
+    .menu-item {
+        width: 200px;
+    }
+    .dot {
+        font-size: 25px;
+        overflow-x: hidden;
+        width: 90%;
+    }
+}
+// ARTICLE
+.article{
+    font-family: 'Montserrat';
+    width: 100vw;
+    height: 100vh;
+    .display-4 {
+        font-family: 'Montserrat';
+        font-weight: normal;
+        color: $teal;
+        font-size: 3.5rem;
+    }
+    h6 {
+        padding-top: 10px;
+        color: $cedar;
+    }
+    .d-flex{
+        width: 100%;
+        .flex-item.content {
+         width: 60%;
+         padding: 0px 5px;
+         p.lead {
+             font-size: 0.8rem;
+             line-height: 1.8rem;
+             text-align: left;
+         }   
+        }
+        .flex-item.articleimg {
+            padding: 0px 5px;
+            width: 40%;
+            overflow: hidden;
+        }
+    }
+    .featured_article {
+    h6 {
+        color: $teal;
+        font-weight: bold;
+    }
+    .subhead {
+        font-size: 0.7rem;
+        color: $cedar;
+        font-weight: bold;
+    }
+    .d-flex{
+
+        .flex-item {
+            padding: 4px 2px 0px 0px;
+            p.lead {
+                font-size: 0.5rem;
+                line-height: 1.2rem;
+                text-align: left;
+                padding-right: 10px;
+            }
+            a.btn {
+                font-size: 0.5rem;
+            }   
+        }
+        
+    }
+    
+    }
+    
+}
+
+// KITCHEN TEAM
+.staffbio {
+    background: url('../images/kitchen_bg.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    color: $white;
+    width: 100vw;
+    .blackop{
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        height: 100%;
+        width: 100%;
+        padding: 100px;
+        h2 {
+            font-family: 'Montserrat';
+            text-align: center;
+            font-weight: 600;
+        }
+        img {
+            clip-path: circle(50% at 50% 50%);
+            width: 200px;
+        }
+    }
+    
+}
+// REVIEWS
+.reviews {
+    .container{
+        h1 {
+            font-family: 'Montserrat';
+            color: $teal;
+            font-weight: light;
+        }
+        .content {
+            font-family: 'Montserrat';
+            h5 {
+                color: $cedar;
+                font-size: 1.5rem;
+            }
+            .star {
+                .fa.fa-star {
+                    color: #cccccc;
+                    padding: 10px 8px 10px 0px;
+                }
+                .fa.fa-star.ranked {
+                    color: #333333;
+                }
+            }
+            p.lead {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+// Footer
+.footer {
+    background-color: #181818;
+    padding: 50px 50px 10px 50px;
+    color: $white;
+    width: 100vw;
+    font-family: 'Montserrat';
+    .row{
+        .brand_logo {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        h5 {
+            font-size: 1rem;
+        }
+        p.lead {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+        }
+    }
+    .d-flex {
+        p.lead{
+            font-size: 0.8rem;
+            i.fa {
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+
+    }
+    
+}
